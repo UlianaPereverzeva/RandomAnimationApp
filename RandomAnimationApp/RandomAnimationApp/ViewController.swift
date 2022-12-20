@@ -54,6 +54,8 @@ class ViewController: UIViewController {
         self.springView.backgroundColor = .random()
         sender.backgroundColor = springView.backgroundColor
         
+        sender.setTitle("Change", for: .normal)
+        
         firstStack.isHidden = false
         secondStack.isHidden = false
         thirdStack.isHidden = false
@@ -179,7 +181,7 @@ class ViewController: UIViewController {
         
     func setUpButton() {
         button.layer.cornerRadius = 20
-        button.titleLabel?.text = "Change animation"
+        button.setTitle("Press to Change", for: .normal)
         button.backgroundColor = UIColor(red: 0.60, green: 0.71, blue: 0.25, alpha: 1.00)
     }
     
